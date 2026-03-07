@@ -1,0 +1,13 @@
+﻿<Window x:Class="CofeMaster.ViewingFolder.WindowFolder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CofeMaster.ViewingFolder.WindowFolder"
+        mc:Ignorable="d"
+		  Style="{StaticResource Basic_WindowStyle}"
+		  Title="{Binding ElementName=BodyFrame, Path=Content.Title}">
+    <Grid>
+        
+    </Grid>
+</Window>
