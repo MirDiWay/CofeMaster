@@ -59,8 +59,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ViewingFolder\PageFolder\WindowControlPanelPage.xaml.cs">
-      <DependentUpon>WindowControlPanelPage.xaml</DependentUpon>
+    <Compile Include="ConfigFolder\ClassFolder\FrameNavigationClass.cs" />
+    <Compile Include="ViewingFolder\UserControlFolder\HotHotBar_UserControl.xaml.cs">
+      <DependentUpon>HotHotBar_UserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewingFolder\WindowFolder\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -84,6 +85,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="ConfigFolder\ContentFolder\FontFolder\Material-Design-Iconic-Font.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,19 +95,39 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ConfigFolder\StyleFolder\StylePage.xaml">
+    <Page Include="ConfigFolder\StyleFolder\Style_Border.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ConfigFolder\StyleFolder\StyleStackPanel.xaml">
+    <Page Include="ConfigFolder\StyleFolder\Style_Button.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ConfigFolder\StyleFolder\StyleWindow.xaml">
+    <Page Include="ConfigFolder\StyleFolder\Style_Frame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewingFolder\PageFolder\WindowControlPanelPage.xaml">
+    <Page Include="ConfigFolder\StyleFolder\Style_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfigFolder\StyleFolder\Style_StackPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfigFolder\StyleFolder\Style_TextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfigFolder\StyleFolder\Style_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfigFolder\StyleFolder\Style_UserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewingFolder\UserControlFolder\HotHotBar_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -115,7 +137,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ConfigFolder\ClassFolder\" />
+    <Folder Include="ViewingFolder\PageFolder\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

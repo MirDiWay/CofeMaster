@@ -1,0 +1,75 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style
+	    x:Key="HotHotbar_ButtonStyle"
+	    TargetType="Button">
+		<Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="Foreground" Value="#a2a2a2"/>
+		<Setter Property="BorderBrush" Value="Transparent"/>
+		<Setter Property="Height" Value="40"/>
+		<Setter Property="Width" Value="60"/>
+		<Setter Property="FontSize" Value="18"/>
+		<Setter Property="Cursor" Value="Hand"/>
+		<Setter Property="BorderThickness" Value="0"/>
+		<Setter Property="FontFamily" Value="\ConfigFolder\ContentFolder\FontFolder\#Material-Design-Iconic-Font"/>
+	</Style>
+
+	<Style
+	    x:Key="Rollup_HotHotbar_ButtonStyle"
+	    BasedOn="{StaticResource HotHotbar_ButtonStyle}"
+	    TargetType="Button">
+		<Setter Property="Content" Value="&#xf1eb;"/>
+		<Setter Property="ToolTip" Value="СВЕРНУТЬ"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Border
+					    Background="{TemplateBinding Background}"
+					    BorderBrush="{TemplateBinding BorderBrush}"
+					    BorderThickness="{TemplateBinding BorderThickness}"
+					    CornerRadius="0">
+						<ContentPresenter
+						    HorizontalAlignment="Center"
+						    VerticalAlignment="Center"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter Property="Background" Value="#19FFFFFF"/>
+							<Setter Property="Foreground" Value="#cccccc"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style
+	    x:Key="Close_HotHotbar_ButtonStyle"
+	    BasedOn="{StaticResource HotHotbar_ButtonStyle}"
+	    TargetType="Button">
+		<Setter Property="Content" Value="&#xf136;"/>
+		<Setter Property="ToolTip" Value="ЗАКРЫТЬ"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Border
+					    Background="{TemplateBinding Background}"
+					    BorderThickness="{TemplateBinding BorderThickness}"
+					    CornerRadius="0 0 0 0">
+						<ContentPresenter
+						    HorizontalAlignment="Center"
+						    VerticalAlignment="Center"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter Property="Background" Value="#ff4848"/>
+							<Setter Property="Foreground" Value="#cccccc"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

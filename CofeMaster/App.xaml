@@ -1,14 +1,19 @@
-﻿<Application x:Class="CofeMaster.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:CofeMaster"
-             StartupUri="MainWindow.xaml">
+﻿<Application
+    x:Class="CofeMaster.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:CofeMaster"
+    StartupUri="\ViewingFolder\WindowFolder\MainWindow.xaml">
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="\ConfigFolder\StyleFolder\StyleWindow.xaml" />
-				<ResourceDictionary Source="\ConfigFolder\StyleFolder\StylePage.xaml" />
-				<ResourceDictionary Source="\ConfigFolder\StyleFolder\StyleStackPanel.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_Window.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_Page.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_StackPanel.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_Border.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_Button.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_TextBlock.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_UserControl.xaml"/>
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
