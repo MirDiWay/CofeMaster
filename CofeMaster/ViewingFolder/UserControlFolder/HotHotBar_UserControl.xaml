@@ -9,6 +9,14 @@
     mc:Ignorable="d">
 	<Border>
 		<Grid>
+			<TextBlock
+			    Margin="10,0,0,0"
+			    HorizontalAlignment="Left"
+			    VerticalAlignment="Center"
+			    FontFamily="Consolas"
+			    FontSize="16"
+			    Foreground="#fff"
+			    Text="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=Title}"/>
 			<StackPanel Style="{StaticResource ControlButton_StackPanelStyle}">
 				<Button
 				    Click="Minimize_Click"

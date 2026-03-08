@@ -1,4 +1,6 @@
 ﻿using CofeMaster.ConfigFolder.ClassFolder;
+using CofeMaster.ViewingFolder.PageFolder;
+using CofeMaster.ViewingFolder.UserControlFolder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,14 +21,19 @@ namespace CofeMaster.ViewingFolder.WindowFolder
     {
         public MainWindow()
         {
-            InitializeComponent();
-            Event_ConnectFramePage();
-        }
+            /* 
+                При запуске окна происходит инициализация +
+                Присваевается определённому Frame свойсво в определённом классе
+                После выводится страница через класс
+                Отправляюься данные для активации кнопки, что бы в итоге это выглядело красиво и безшовно
+            */
 
-        private void Event_ConnectFramePage()
-        {
-            //FrameNavigationClass.mainFrame_FNC = MainFrame;
-            //FrameNavigationClass.mainFrame_FNC.Navigate(new AuthorizationPage());
+            InitializeComponent();
+            FrameNavigationClass.mainFrame_FNC = MainFrame;
+            FrameNavigationClass.mainFrame_FNC.Navigate(new Favorites_Page());
+
+            ControlMenuButton_UserControl.Favorites_ToggleButton.IsChecked = true;
+            ControlMenuButton_UserControl.Favorites_ToggleButton.IsEnabled = false;
         }
     }
 }

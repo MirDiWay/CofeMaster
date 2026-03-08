@@ -1,0 +1,28 @@
+﻿<UserControl
+    x:Class="CofeMaster.ViewingFolder.UserControlFolder.MenuButton_UserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CofeMaster.ViewingFolder.UserControlFolder"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource MunuButton_UserControlStyle}"
+    mc:Ignorable="d">
+	<StackPanel Name="StackToggleButtonMenu_StackPanel">
+		<ToggleButton
+		    x:Name="Favorites_ToggleButton"
+		    Click="MenuClick_ToggleButton"
+		    Content="Избранное"/>
+		<ToggleButton
+		    x:Name="Range_ToggleButton"
+		    Click="MenuClick_ToggleButton"
+		    Content="Ассортимент"/>
+		<ToggleButton
+		    x:Name="Partners_ToggleButton"
+		    Click="MenuClick_ToggleButton"
+		    Content="Партнёры"/>
+		<ToggleButton
+		    x:Name="Settings_ToggleButton"
+		    Click="MenuClick_ToggleButton"
+		    Content="Настройки"/>
+	</StackPanel>
+</UserControl>

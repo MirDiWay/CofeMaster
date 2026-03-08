@@ -8,8 +8,8 @@
 		<Setter Property="BorderBrush" Value="#1d0f0c"/>
 		<Setter Property="BorderThickness" Value="0"/>
 		<Setter Property="CornerRadius" Value="0"/>
-		<Setter Property="VerticalAlignment" Value="Center"/>
-		<Setter Property="HorizontalAlignment" Value="Center"/>
+		<!--<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="HorizontalAlignment" Value="Center"/>-->
 		<Setter Property="FocusVisualStyle" Value="{x:Null}"/>
 	</Style>
 	<Style
@@ -17,5 +17,11 @@
 	    BasedOn="{StaticResource HotHotbar_BorderStyle}"
 	    TargetType="Border">
 		<Setter Property="Background" Value="#44291e"/>
+	</Style>
+	<Style
+	    x:Key="MenuButtonBorder_BorderStyle"
+	    BasedOn="{StaticResource HotHotbar_BorderStyle}"
+	    TargetType="Border">
+		<Setter Property="Background" Value="#1d0f0c"/>
 	</Style>
 </ResourceDictionary>

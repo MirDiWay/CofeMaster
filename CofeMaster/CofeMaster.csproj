@@ -60,8 +60,23 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ConfigFolder\ClassFolder\FrameNavigationClass.cs" />
+    <Compile Include="ViewingFolder\PageFolder\Favorites_Page.xaml.cs">
+      <DependentUpon>Favorites_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewingFolder\PageFolder\Partners_Page.xaml.cs">
+      <DependentUpon>Partners_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewingFolder\PageFolder\Range_Page.xaml.cs">
+      <DependentUpon>Range_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewingFolder\PageFolder\Settings_Page.xaml.cs">
+      <DependentUpon>Settings_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewingFolder\UserControlFolder\HotHotBar_UserControl.xaml.cs">
       <DependentUpon>HotHotBar_UserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewingFolder\UserControlFolder\MenuButton_UserControl.xaml.cs">
+      <DependentUpon>MenuButton_UserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewingFolder\WindowFolder\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -119,6 +134,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ConfigFolder\StyleFolder\Style_ToggleButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ConfigFolder\StyleFolder\Style_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -127,7 +146,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ViewingFolder\PageFolder\Favorites_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewingFolder\PageFolder\Partners_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewingFolder\PageFolder\Range_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewingFolder\PageFolder\Settings_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewingFolder\UserControlFolder\HotHotBar_UserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewingFolder\UserControlFolder\MenuButton_UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -136,8 +175,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewingFolder\PageFolder\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
