@@ -16,6 +16,8 @@
 				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_UserControl.xaml"/>
 				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_ToggleButton.xaml"/>
 				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_Frame.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_ScrollViewer.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_Hyperlink.xaml"/>
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>

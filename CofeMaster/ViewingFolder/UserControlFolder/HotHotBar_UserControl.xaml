@@ -9,14 +9,15 @@
     mc:Ignorable="d">
 	<Border>
 		<Grid>
-			<TextBlock
-			    Margin="10,0,0,0"
-			    HorizontalAlignment="Left"
-			    VerticalAlignment="Center"
-			    FontFamily="Consolas"
-			    FontSize="16"
-			    Foreground="#fff"
-			    Text="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=Title}"/>
+			<StackPanel Style="{StaticResource TitleWindow_StackPanelStyle}">
+				<TextBlock
+				    Style="{StaticResource TitleWindow_TextBlockStyle}"
+				    Text="CofeMaster:"/>
+				<TextBlock
+				    Margin="10,0,0,0"
+				    Style="{StaticResource TitleWindow_TextBlockStyle}"
+				    Text="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=Title}"/>
+			</StackPanel>
 			<StackPanel Style="{StaticResource ControlButton_StackPanelStyle}">
 				<Button
 				    Click="Minimize_Click"

@@ -9,4 +9,28 @@
 		<Setter Property="HorizontalAlignment" Value="Right"/>
 		<Setter Property="Background" Value="#1d0f0c"/>
 	</Style>
+	<Style
+	    x:Key="TitleWindow_StackPanelStyle"
+	    TargetType="StackPanel">
+		<Setter Property="Orientation" Value="Horizontal"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="Margin" Value="10,0,0,0"/>
+	</Style>
+	<Style
+	    x:Key="ListStack_StackPanelStyle"
+	    TargetType="StackPanel">
+		<Setter Property="Orientation" Value="Vertical"/>
+		<Setter Property="VerticalAlignment" Value="Top"/>
+		<Setter Property="HorizontalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="0,10,0,10"/>
+	</Style>
+	<Style
+	    x:Key="ComboStack_StackPanelStyle"
+	    TargetType="StackPanel">
+		<Setter Property="Orientation" Value="Horizontal"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="HorizontalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="0,10,0,10"/>
+	</Style>
 </ResourceDictionary>

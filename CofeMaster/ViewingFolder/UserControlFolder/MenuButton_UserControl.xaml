@@ -11,18 +11,22 @@
 		<ToggleButton
 		    x:Name="Favorites_ToggleButton"
 		    Click="MenuClick_ToggleButton"
-		    Content="Избранное"/>
+		    Content="Избранное"
+		    ToolTip="Избранное"/>
 		<ToggleButton
 		    x:Name="Range_ToggleButton"
 		    Click="MenuClick_ToggleButton"
-		    Content="Ассортимент"/>
+		    Content="Ассортимент"
+		    ToolTip="Ассортимент"/>
 		<ToggleButton
 		    x:Name="Partners_ToggleButton"
 		    Click="MenuClick_ToggleButton"
-		    Content="Партнёры"/>
+		    Content="Партнёры"
+		    ToolTip="Партнёры"/>
 		<ToggleButton
 		    x:Name="Settings_ToggleButton"
 		    Click="MenuClick_ToggleButton"
-		    Content="Настройки"/>
+		    Content="Настройки"
+		    ToolTip="Настройки"/>
 	</StackPanel>
 </UserControl>

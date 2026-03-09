@@ -7,8 +7,66 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Настройки"
     mc:Ignorable="d">
-
-	<Grid>
-		<TextBlock Text="Настройки"/>
-	</Grid>
+	<ScrollViewer>
+		<StackPanel
+		    Width="1050"
+		    Style="{StaticResource ListStack_StackPanelStyle}">
+			<TextBlock
+			    Style="{StaticResource Description_TextBlockStyle}"
+			    Text="Эта программа помогает любителям кофе готовить любимые напитки. Здесь вы можете найти интересующий вас кофейный напиток и добавить его в избранное, чтобы быстро возвращаться к нему в будущем. Также приложение позволяет рассчитать количество ингредиентов, необходимых для приготовления напитка, и легко настроить пропорции под себя. Рекомендуем заглянуть во вкладку «Партнёры», где вы сможете ознакомиться с ассортиментом кофейных зёрен и кофемашин. Это поможет выбрать подходящие продукты и приготовить по-настоящему вкусный и насыщенный кофе."/>
+			<StackPanel Style="{StaticResource ComboStack_StackPanelStyle}">
+				<TextBlock
+				    Style="{StaticResource One_TextBlockStyle}"
+				    Text="Номер версии"/>
+				<TextBlock
+				    x:Name="NumberVersion_TextBlock"
+				    Margin="10,0,0,0"
+				    Style="{StaticResource Data_TextBlockStyle}"/>
+			</StackPanel>
+			<StackPanel Style="{StaticResource ComboStack_StackPanelStyle}">
+				<TextBlock
+				    Style="{StaticResource One_TextBlockStyle}"
+				    Text="Дата последнего обновления локально"/>
+				<TextBlock
+				    x:Name="DateLastUpdate_TextBlock"
+				    Margin="10,0,0,0"
+				    Style="{StaticResource Data_TextBlockStyle}"/>
+			</StackPanel>
+			<TextBlock Text=""/>
+			<TextBlock Text=""/>
+			<TextBlock Text="Номер версии на сервере"/>
+			<TextBlock Text="Дата выхода обновления на сервере"/>
+			<TextBlock Text=""/>
+			<TextBlock Text="Требуется ли обновление"/>
+			<TextBlock Text=""/>
+			<TextBlock Text="Чего нового добавили"/>
+			<TextBlock Text=""/>
+			<TextBlock Text="Кнопка обновления"/>
+			<TextBlock Text="Проверка доступности перед обновлением"/>
+			<TextBlock Text=""/>
+			<TextBlock Text="Поддержка нас как разработчиков:"/>
+			<TextBlock Text="QIWI: https://qiwi.com/n/USERNAME"/>
+			<TextBlock Text="GitHub Sponsors: https://github.com/sponsors/USERNAME"/>
+			<TextBlock Text="Patreon: ttps://Patreon.com/USERNAME"/>
+			<TextBlock Text="Бусти: ttps://boosty.com/USERNAME"/>
+			<TextBlock Text="Крипта: 0x8f3A7cB29D1E4a6F5c9E0bA7d2C4F6e1B8d3A9C70x8f3A7cB9E0bA7d2C4F6E4a6F5c9E0bA7d2C4F6e1B8d3"/>
+			<StackPanel Style="{StaticResource ComboStack_StackPanelStyle}">
+				<TextBlock
+				    Style="{StaticResource One_TextBlockStyle}"
+				    Text="Данный проект доступен по слдующей ссылке на GitHub">
+					<TextBlock
+					    Margin="10,0,0,0"
+					    Style="{StaticResource Icon_TextBlockStyle}"
+					    Text="&#xf3f6;"/>
+				</TextBlock>
+				<TextBlock Margin="10,0,0,0">
+					<Hyperlink
+					    Click="Hyperlink_Click"
+					    ToolTip="Открыть ссылку в браузере по умолчанию">
+						https://github.com/MirDiWay/CofeMaster
+					</Hyperlink>
+				</TextBlock>
+			</StackPanel>
+		</StackPanel>
+	</ScrollViewer>
 </Page>
