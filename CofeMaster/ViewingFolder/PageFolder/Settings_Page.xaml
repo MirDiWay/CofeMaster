@@ -32,24 +32,79 @@
 				    Margin="10,0,0,0"
 				    Style="{StaticResource Data_TextBlockStyle}"/>
 			</StackPanel>
-			<TextBlock Text=""/>
-			<TextBlock Text=""/>
-			<TextBlock Text="Номер версии на сервере"/>
-			<TextBlock Text="Дата выхода обновления на сервере"/>
-			<TextBlock Text=""/>
-			<TextBlock Text="Требуется ли обновление"/>
-			<TextBlock Text=""/>
-			<TextBlock Text="Чего нового добавили"/>
-			<TextBlock Text=""/>
-			<TextBlock Text="Кнопка обновления"/>
-			<TextBlock Text="Проверка доступности перед обновлением"/>
-			<TextBlock Text=""/>
-			<TextBlock Text="Поддержка нас как разработчиков:"/>
-			<TextBlock Text="QIWI: https://qiwi.com/n/USERNAME"/>
-			<TextBlock Text="GitHub Sponsors: https://github.com/sponsors/USERNAME"/>
-			<TextBlock Text="Patreon: ttps://Patreon.com/USERNAME"/>
-			<TextBlock Text="Бусти: ttps://boosty.com/USERNAME"/>
-			<TextBlock Text="Крипта: 0x8f3A7cB29D1E4a6F5c9E0bA7d2C4F6e1B8d3A9C70x8f3A7cB9E0bA7d2C4F6E4a6F5c9E0bA7d2C4F6e1B8d3"/>
+			<StackPanel Style="{StaticResource ComboStack_StackPanelStyle}">
+				<TextBlock
+				    Style="{StaticResource One_TextBlockStyle}"
+				    Text="Номер версии на сервере"/>
+				<TextBlock
+				    Margin="10,0,0,0"
+				    Style="{StaticResource Data_TextBlockStyle}"
+				    Text="26.1.0.0"/>
+			</StackPanel>
+			<StackPanel Style="{StaticResource ComboStack_StackPanelStyle}">
+				<TextBlock
+				    Style="{StaticResource One_TextBlockStyle}"
+				    Text="Дата выхода обновления на сервере"/>
+				<TextBlock
+				    Margin="10,0,0,0"
+				    Style="{StaticResource Data_TextBlockStyle}"
+				    Text="15.03.2026   14:00:00"/>
+			</StackPanel>
+			<StackPanel Style="{StaticResource ComboStack_StackPanelStyle}">
+				<TextBlock
+				    Style="{StaticResource One_TextBlockStyle}"
+				    Text="Требуется ли обновление"/>
+				<TextBlock
+				    Margin="10,0,0,0"
+				    Style="{StaticResource Data_TextBlockStyle}"
+				    Text="Обновление не требуется"/>
+			</StackPanel>
+			<StackPanel Style="{StaticResource ComboStack_StackPanelStyle}">
+				<TextBlock
+				    VerticalAlignment="Top"
+				    Style="{StaticResource One_TextBlockStyle}"
+				    Text="Чего нового добавили"/>
+				<TextBlock
+				    Width="600"
+				    Margin="10,0,0,0"
+				    Style="{StaticResource Description_TextBlockStyle}"
+				    Text="Добавили сочетание цветов, улучшили дизайн интерфейса, добавили в список больше кофе, сделали выдержки расстояния, добавили авто обновление, убрали ненужный звук, добавили иконку для запуска приложения, увеличили сам список кофе, улучшили пользовательское восприятие"/>
+			</StackPanel>
+			<StackPanel Style="{StaticResource ComboStack_StackPanelStyle}">
+				<TextBlock
+				    VerticalAlignment="Top"
+				    Style="{StaticResource One_TextBlockStyle}"
+				    Text="Поддержка нас как разработчиков:"/>
+				<StackPanel
+				    Orientation="Vertical"
+				    Style="{StaticResource ComboStack_StackPanelStyle}">
+					<TextBlock
+					    Width="600"
+					    Margin="10,0,0,0"
+					    Style="{StaticResource Description_TextBlockStyle}"
+					    Text="QIWI: https://qiwi.com/n/USERNAME"/>
+					<TextBlock
+					    Width="600"
+					    Margin="10,0,0,0"
+					    Style="{StaticResource Description_TextBlockStyle}"
+					    Text="GitHub Sponsors: https://github.com/sponsors/USERNAME"/>
+					<TextBlock
+					    Width="600"
+					    Margin="10,0,0,0"
+					    Style="{StaticResource Description_TextBlockStyle}"
+					    Text="Patreon: ttps://Patreon.com/USERNAME"/>
+					<TextBlock
+					    Width="600"
+					    Margin="10,0,0,0"
+					    Style="{StaticResource Description_TextBlockStyle}"
+					    Text="Бусти: ttps://boosty.com/USERNAME"/>
+					<TextBlock
+					    Width="600"
+					    Margin="10,0,0,0"
+					    Style="{StaticResource Description_TextBlockStyle}"
+					    Text="Крипта: ashfkjdhsdjfaksa475JBKJCVKJDHFGKJHDSKJGI50893809KJLKDAJFLK182kjkladsjf832487kjfKAJSAF"/>
+				</StackPanel>
+			</StackPanel>
 			<StackPanel Style="{StaticResource ComboStack_StackPanelStyle}">
 				<TextBlock
 				    Style="{StaticResource One_TextBlockStyle}"

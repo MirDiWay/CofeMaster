@@ -1,5 +1,4 @@
-﻿using CofeMaster.ConfigFolder.ClassFolder;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CofeMaster.ViewingFolder.PageFolder
+namespace CofeMaster.ViewingFolder.UserControlFolder
 {
-    public partial class Range_Page : Page
+    /// <summary>
+    /// Логика взаимодействия для RangeListView_UserControl.xaml
+    /// </summary>
+    public partial class RangeListView_UserControl : UserControl
     {
-        public Range_Page()
+        public RangeListView_UserControl()
         {
             InitializeComponent();
-            try
-            {
-                Range_ListView.ItemsSource = CoffeeRepository.Coffees.ToList();
-            }
-            catch (Exception exception) 
-            {
-             MessageBox.Show(exception.Message);
-            }
         }
     }
 }

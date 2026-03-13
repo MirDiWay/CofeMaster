@@ -1,21 +1,8 @@
 ﻿using CofeMaster.ConfigFolder.ClassFolder;
 using CofeMaster.ViewingFolder.PageFolder;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CofeMaster.ViewingFolder.UserControlFolder
 {
@@ -25,10 +12,6 @@ namespace CofeMaster.ViewingFolder.UserControlFolder
         public MenuButton_UserControl() /// тут прописывается, что происходит, если страница инициализированна
         {
             InitializeComponent();
-
-            //Favorites_ToggleButton.IsChecked = true;
-            //Favorites_ToggleButton.IsEnabled = false;
-            //FrameNavigationClass.mainFrame_FNC.Navigate(new Favorites_Page());
         }
 
         private void MenuClick_ToggleButton(object sender, RoutedEventArgs e) /// что будет происходит при нажатии кнопки

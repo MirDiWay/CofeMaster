@@ -18,6 +18,7 @@
 				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_Frame.xaml"/>
 				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_ScrollViewer.xaml"/>
 				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_Hyperlink.xaml"/>
+				<ResourceDictionary Source="\ConfigFolder\StyleFolder\Style_ListView.xaml"/>
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
